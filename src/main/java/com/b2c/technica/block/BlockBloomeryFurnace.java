@@ -8,10 +8,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-/**
- * Created by akrau on 19.04.2016.
- */
-public class BlockBloomeryFurnace extends Block{
+public class BlockBloomeryFurnace extends Block {
     public BlockBloomeryFurnace() {
         super(Material.clay, MapColor.grayColor);
     }
@@ -19,6 +16,5 @@ public class BlockBloomeryFurnace extends Block{
     @Override
     public TileEntity createTileEntity(World world, IBlockState state) {
         return new TileBloomeryFurnace();
-
     }
 }

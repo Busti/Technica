@@ -3,6 +3,7 @@ package com.b2c.technica;
 import com.b2c.technica.block.BlockBloomeryFurnace;
 import com.b2c.technica.block.BlockTMeta;
 import net.minecraft.block.Block;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Registry {
     //Blocks
@@ -14,7 +15,7 @@ public class Registry {
         blockOre = new BlockTMeta();
         blockBloomeryFurnce = new BlockBloomeryFurnace();
 
-        //GameRegistry.register(blockOre);
+        GameRegistry.register(blockOre);
         //GameRegistry.register(blockBloomeryFurnce);
     }
 }

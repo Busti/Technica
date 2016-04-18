@@ -13,6 +13,7 @@ public class BlockTMeta extends Block {
     public BlockTMeta(MapColor mapColor) {
         super(Material.rock, mapColor);
         subBlocks = new ArrayList<String>();
+        setRegistryName("BlockMeta");
     }
 
     public BlockTMeta() {
@@ -23,7 +24,4 @@ public class BlockTMeta extends Block {
         subBlocks.add(name);
         return this;
     }
-
-
-
 }
