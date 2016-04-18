@@ -9,4 +9,8 @@ public class Registry {
     public static void init() {
         blockOre = new BlockTMeta();
     }
+
+    public static Block bloomeryFurnace;
+
+
 }
