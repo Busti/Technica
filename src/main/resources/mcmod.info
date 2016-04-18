@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "technica",
+  "name": "Technica",
+  "description": "A mod about real live technology...",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Busti", "Master206"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
