@@ -4,18 +4,26 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BlockTMeta extends Block {
-    List subBlocks;
+    private final List<String> subBlocks;
 
     public BlockTMeta(MapColor mapColor) {
         super(Material.rock, mapColor);
+        subBlocks = new ArrayList<String>();
     }
 
     public BlockTMeta() {
         this(MapColor.stoneColor);
     }
+
+    public BlockTMeta addSubBlock(String name) {
+        subBlocks.add(name);
+        return this;
+    }
+
 
 
 }
