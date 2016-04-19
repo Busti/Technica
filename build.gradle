@@ -24,6 +24,12 @@ version = "1.0"
 group= "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "modid"
 
+allprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
 minecraft {
     version = "1.9-12.16.0.1865-1.9"
     runDir = "run"
