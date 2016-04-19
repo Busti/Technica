@@ -16,11 +16,11 @@ public class Registry {
 
 
     public static void init() {
-        blockOre = new BlockTMeta();
-        blockBloomeryFurnce = new BlockBloomeryFurnace();
+        blockOre = new BlockTMeta().setRegistryName("Ore1");
+        blockBloomeryFurnce = new BlockBloomeryFurnace().setRegistryName("BloomeryFurnace");
 
         registerBlock(blockOre);
-        //GameRegistry.register(blockBloomeryFurnce);
+        GameRegistry.register(blockBloomeryFurnce);
     }
 
     private static <BLOCK extends Block> BLOCK registerBlock(BLOCK block) {
