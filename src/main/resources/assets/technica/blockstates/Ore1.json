@@ -4,7 +4,7 @@
     "textures": {
       "all": "technica:blocks/rubberlogTop"
     },
-    "model": "minecraft:cube_all",
+    "model": "cube_all",
     "uvlock": true
   },
   "variants": {
