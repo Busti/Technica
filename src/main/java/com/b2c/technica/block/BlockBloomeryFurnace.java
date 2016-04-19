@@ -11,7 +11,6 @@ import net.minecraft.world.World;
 public class BlockBloomeryFurnace extends Block {
     public BlockBloomeryFurnace() {
         super(Material.clay, MapColor.grayColor);
-
     }
 
     @Override
