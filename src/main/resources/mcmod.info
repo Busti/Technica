@@ -2,13 +2,13 @@
 {
   "modid": "technica",
   "name": "Technica",
-  "description": "A mod about real live technology...",
+  "description": "A mod where all the tech should resemble real life as much as possible.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
   "authorList": ["Busti", "Master206"],
-  "credits": "",
+  "credits": "Nobody yet",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

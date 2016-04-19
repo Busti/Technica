@@ -20,9 +20,15 @@ public class Registry {
         blockBloomeryFurnce = new BlockBloomeryFurnace().setRegistryName("BloomeryFurnace");
 
         registerBlock(blockOre);
-        GameRegistry.register(blockBloomeryFurnce);
+        registerBlock(blockBloomeryFurnce);
     }
 
+    /**
+     * Registers a block and the blockItem belonging to it.
+     * @param block The block.
+     * @param <BLOCK> The class of the block.
+     * @return The block object to allow for chaining.
+     */
     private static <BLOCK extends Block> BLOCK registerBlock(BLOCK block) {
         return registerBlock(block, ItemBlock::new);
     }
@@ -31,7 +37,6 @@ public class Registry {
         GameRegistry.register(block);
         if (itemFactory != null) {
             final ItemBlock itemBlock = itemFactory.apply(block);
-
             GameRegistry.register(itemBlock.setRegistryName(block.getRegistryName()));
         }
 
