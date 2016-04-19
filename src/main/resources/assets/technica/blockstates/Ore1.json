@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "technica:blocks/rubberlogTop"
+    },
+    "model": "minecraft:cube_all",
+    "uvlock": true
+  },
+  "variants": {
+    "normal": [{
+
+    }]
+  }
+}
