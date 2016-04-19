@@ -29,7 +29,6 @@ public class Registry {
 
     private static <BLOCK extends Block> BLOCK registerBlock(BLOCK block, @Nullable Function<BLOCK, ItemBlock> itemFactory) {
         GameRegistry.register(block);
-
         if (itemFactory != null) {
             final ItemBlock itemBlock = itemFactory.apply(block);
 
