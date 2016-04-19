@@ -1,9 +1,18 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "technica:blocks/BloomeryFurnaceFront"
+    },
+    "model": "cube_all",
+    "uvlock": true
+  },
   "variants": {
-    "normal": {
-      "model": "technica:BloomeryFurnace"
-    }
+    "normal": [{
+
+    }],
+    "inventory": [{
+
+    }]
   }
 }
-
-
