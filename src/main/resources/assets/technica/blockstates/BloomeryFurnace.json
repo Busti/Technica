@@ -2,13 +2,19 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "all": "technica:blocks/BloomeryFurnaceFront"
+      "down": "technica:blocks/BloomeryFurnaceFront",
+      "up": "technica:blocks/BloomeryFurnaceFront",
+      "north": "technica:blocks/rubberlogTop",
+      "south": "technica:blocks/BloomeryFurnaceFront",
+      "west": "technica:blocks/BloomeryFurnaceFront",
+      "east": "technica:blocks/BloomeryFurnaceFront"
     },
-    "model": "cube_all",
-    "uvlock": true
+    "model": "cube_directional"
   },
   "variants": {
-    "normal": [{ }],
+    "normal": [{
+      "y": 90
+    }],
     "inventory": [{ }]
   }
 }
