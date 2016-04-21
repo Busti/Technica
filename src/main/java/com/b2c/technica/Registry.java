@@ -3,7 +3,9 @@ package com.b2c.technica;
 import com.b2c.technica.block.BlockBloomeryFurnace;
 import com.b2c.technica.block.BlockTMeta;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.ItemBlock;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import javax.annotation.Nullable;
@@ -37,6 +39,7 @@ public class Registry {
         if (itemFactory != null) {
             final ItemBlock itemBlock = itemFactory.apply(block);
             GameRegistry.register(itemBlock.setRegistryName(block.getRegistryName()));
+            ModelLoader.setCustomModelResourceLocation(itemBlock, 0, new ModelResourceLocation(itemBlock.getRegistryName(), "inventory"));
         }
 
         return block;
