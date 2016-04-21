@@ -14,6 +14,8 @@ public class BlockBloomeryFurnace extends Block {
         super(Material.clay, MapColor.grayColor);
     }
 
+
+
     @Override
     protected BlockStateContainer createBlockState() {
         return super.createBlockState();

@@ -18,7 +18,7 @@ public class Registry {
 
     public static void init() {
         blockOre = new BlockTMeta().setRegistryName("ore1").setUnlocalizedName("technica:Ore1").setCreativeTab(Technica.tabTechnicaMain);
-        blockBloomeryFurnce = new BlockBloomeryFurnace().setRegistryName("BloomeryFurnace").setUnlocalizedName("BloomeryFurnace").setCreativeTab(Technica.tabTechnicaMain);
+        blockBloomeryFurnce = new BlockBloomeryFurnace().setRegistryName("BloomeryFurnace").setUnlocalizedName("technica:BloomeryFurnace").setCreativeTab(Technica.tabTechnicaMain);
 
         registerBlock(blockOre);
         registerBlock(blockBloomeryFurnce);
