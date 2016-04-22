@@ -8,7 +8,7 @@
       "north": "technica:blocks/BloomeryFurnaceFront",
       "south": "technica:blocks/BloomeryFurnaceSide",
       "west": "technica:blocks/BloomeryFurnaceSide",
-      "east": "technica:blocks/BloomeryFurnaceSide"
+      "east": { "texture": "technica:blocks/BloomeryFurnaceSide", "rotation":  90 }
     },
     "model": "cube_directional"
   },
