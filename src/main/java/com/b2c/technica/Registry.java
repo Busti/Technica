@@ -17,8 +17,8 @@ public class Registry {
     public static Block blockBloomeryFurnce;
 
     public static void init() {
-        blockOre = new BlockTMeta().setRegistryName("ore1").setUnlocalizedName("technica:Ore1").setCreativeTab(Technica.tabTechnicaMain);
-        blockBloomeryFurnce = new BlockBloomeryFurnace().setRegistryName("BloomeryFurnace").setUnlocalizedName("BloomeryFurnace").setCreativeTab(Technica.tabTechnicaMain);
+        blockOre = new BlockTMeta().setRegistryName("ore1").setUnlocalizedName("technica:ore1").setCreativeTab(Technica.tabTechnicaMain);
+        blockBloomeryFurnce = new BlockBloomeryFurnace().setRegistryName("bloomeryFurnace").setUnlocalizedName("bloomeryFurnace").setCreativeTab(Technica.tabTechnicaMain);
 
         registerBlock(blockOre);
         registerBlock(blockBloomeryFurnce);
@@ -31,15 +31,15 @@ public class Registry {
      * @return The block object to allow for chaining.
      */
     private static <BLOCK extends Block> BLOCK registerBlock(BLOCK block) {
-        return registerBlock(block, ItemBlock::new);
+        return registerBlock(block, ItemBlock::new, null);
     }
 
-    private static <BLOCK extends Block> BLOCK registerBlock(BLOCK block, @Nullable Function<BLOCK, ItemBlock> itemFactory) {
+    private static <BLOCK extends Block> BLOCK registerBlock(BLOCK block, @Nullable Function<BLOCK, ItemBlock> itemFactory, @Nullable String defaultVariant) {
         GameRegistry.register(block);
         if (itemFactory != null) {
             final ItemBlock itemBlock = itemFactory.apply(block);
             GameRegistry.register(itemBlock.setRegistryName(block.getRegistryName()));
-            ModelLoader.setCustomModelResourceLocation(itemBlock, 0, new ModelResourceLocation(itemBlock.getRegistryName(), "inventory"));
+            ModelLoader.setCustomModelResourceLocation(itemBlock, 0, new ModelResourceLocation(itemBlock.getRegistryName(), defaultVariant));
         }
 
         return block;
