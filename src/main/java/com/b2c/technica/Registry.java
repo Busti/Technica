@@ -16,7 +16,7 @@ public class Registry {
     public static Block blockOre;
     public static Block blockBloomeryFurnce;
 
-    public static void init() {
+    public static void preInit() {
         blockOre = new BlockTMeta().setRegistryName("ore1").setUnlocalizedName("technica:ore1").setCreativeTab(Technica.tabTechnicaMain);
         blockBloomeryFurnce = new BlockBloomeryFurnace().setRegistryName("bloomeryFurnace").setUnlocalizedName("bloomeryFurnace").setCreativeTab(Technica.tabTechnicaMain);
 
@@ -26,6 +26,7 @@ public class Registry {
 
     /**
      * Registers a block and the blockItem belonging to it.
+     * Also registers te according item renderer.
      * @param block The block.
      * @param <BLOCK> The class of the block.
      * @return The block object to allow for chaining.

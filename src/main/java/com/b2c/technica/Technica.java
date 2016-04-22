@@ -18,12 +18,12 @@ public class Technica {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         tabTechnicaMain = new TabTechnica("technica.main");
-        Registry.init();
+        Registry.preInit();
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        //Registry.init();
+        //Registry.preInit();
     }
 
     class TabTechnica extends CreativeTabs {
